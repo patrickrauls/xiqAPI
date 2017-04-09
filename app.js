@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const express = require('express'),
+    http = require('http'),
     body_parser = require('body-parser'),
     socket = require('socket.io');
 
@@ -8,9 +9,10 @@ const route = require('./routes/index'),
     courses = require('./routes/courses'),
     players = require('./routes/players'),
     scores = require('./routes/scores'),
-    tournaments = routes('./routes/tournaments');
+    tournaments = require('./routes/tournaments');
 
 const app = express(),
+    server = http.createServer(app),
     json_parser = body_parser.json();
 
 app.use(body_parser.urlencoded({
@@ -23,5 +25,6 @@ app.use('/v1/players', players);
 app.use('/v1/scores', scores);
 app.use('/v1/tournaments', tournaments);
 
-app.listen(3000)
+server.listen(3000)
+
 module.exports = app;
