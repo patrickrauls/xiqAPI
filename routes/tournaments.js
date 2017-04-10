@@ -7,6 +7,7 @@ const tournaments = [
         venue: 0,
         start: 'May 7',
         end: 'May 10, 2017',
+        rules: ['Stroke Play', 'Gold Tees', 'Lift, Clean, and Place', 'Cart Path Only', 'All Waste Bunkers are Out of Bounds', 'Putt It Out'],
         players: [{
             id: 0,
             score: [[4, 4, 5, 3, 4, 6, 3, 4, 5, 5, 5, 2, 4, 5, 6, 4, 3, 4]],
@@ -32,6 +33,7 @@ const tournaments = [
         venue: 0,
         start: 'April 20',
         end: 'April 23, 2017',
+        rules: ['Stroke Play', 'Gold Tees', 'Lift, Clean, and Place', 'Cart Path Only', 'All Waste Bunkers are Out of Bounds', 'Putt It Out'],
         players: [{
             id: 0,
             score: [[4, 4, 5, 3, 4, 6, 3, 4, 5, 5, 5, 2, 4, 5, 6, 4, 3, 4]],
@@ -57,6 +59,7 @@ const tournaments = [
         venue: 0,
         start: 'April 13',
         end: 'April 16, 2017',
+        rules: ['Stroke Play', 'Gold Tees', 'Lift, Clean, and Place', 'Cart Path Only', 'All Waste Bunkers are Out of Bounds', 'Putt It Out'],
         players: [{
             id: 0,
             score: [[4, 4, 5, 3, 4, 6, 3, 4, 5, 5, 5, 2, 4, 5, 6, 4, 3, 4]],
