@@ -22,6 +22,61 @@ const players = [
         },
         handicap: 8.1,
         location: 'Denver, CO'
+    },
+    {
+        id: 2,
+        name: {
+            first: 'Sarah',
+            middle: null,
+            last: 'Healey',
+            nickname: ''
+        },
+        handicap: 8.1,
+        location: 'Denver, CO'
+    },
+    {
+        id: 3,
+        name: {
+            first: 'Jeff',
+            middle: null,
+            last: '"Mettle" Diers',
+            nickname: ''
+        },
+        handicap: 8.1,
+        location: 'Denver, CO'
+    },
+    {
+        id: 4,
+        name: {
+            first: 'Kim',
+            middle: null,
+            last: 'Schlesinger',
+            nickname: ''
+        },
+        handicap: 8.1,
+        location: 'Denver, CO'
+    },
+    {
+        id: 5,
+        name: {
+            first: 'Carlos',
+            middle: null,
+            last: 'Rodrigues',
+            nickname: ''
+        },
+        handicap: 8.1,
+        location: 'Denver, CO'
+    },
+    {
+        id: 6,
+        name: {
+            first: 'Berto',
+            middle: null,
+            last: 'Ortega',
+            nickname: ''
+        },
+        handicap: 8.1,
+        location: 'Denver, CO'
     }
 ];
 
