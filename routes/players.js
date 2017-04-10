@@ -26,6 +26,10 @@ const players = [
 ];
 
 router.get('/', (req, res) => {
-    res.status(200).json(players);
+    let invitees = [];
+    req.query.ids.forEach(id => {
+        invitees.push(players[id])
+    })
+    res.status(200).json(invitees);
 })
 module.exports = router;
