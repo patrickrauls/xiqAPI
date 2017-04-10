@@ -77,7 +77,38 @@ const tournaments = [
             score: [[4, 4, 5, 3, 4, 6, 3, 4, 3, 4, 5, 2, 4, 5, 4, 4, 3, 4]],
             forRound: (-1),
             forTournament: (-1)
-        }]
+        }],
+        teeTimes: [
+            [
+                {
+                    players: [0, 1, 2],
+                    hole: 2,
+                    time: '07:39:00'
+
+                },
+                {
+                    players: [3, 4, 5],
+                    hole: 3,
+                    time: '07:39:00'
+
+                }
+            ],
+            [
+                {
+                    players: [0, 1, 2],
+                    hole: 7,
+                    time: '07:39:00'
+
+                },
+                {
+                    players: [3, 4, 5],
+                    hole: 8,
+                    time: '07:39:00'
+
+                }
+            ]
+
+        ]
     },
 ]
 

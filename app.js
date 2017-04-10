@@ -8,6 +8,7 @@ const express = require('express'),
 
 const route = require('./routes/index'),
     courses = require('./routes/courses'),
+    holes = require('./routes/holes'),
     players = require('./routes/players'),
     scores = require('./routes/scores'),
     tournaments = require('./routes/tournaments');
