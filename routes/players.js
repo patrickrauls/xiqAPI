@@ -1,6 +1,7 @@
 const router = require('express').Router();
 
-const players = [
+const players = 
+[
     {
         id: 0,
         name: {
@@ -78,7 +79,7 @@ const players = [
         handicap: 8.1,
         location: 'Denver, CO'
     }
-];
+]
 
 router.get('/', (req, res) => {
     let invitees = [];

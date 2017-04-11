@@ -3,8 +3,9 @@ require('dotenv').config();
 const express = require('express'),
     http = require('http'),
     body_parser = require('body-parser'),
-    cors = require('cors')
-socket = require('socket.io');
+    cors = require('cors'),
+    socket = require('socket.io');
+
 
 const route = require('./routes/index'),
     courses = require('./routes/courses'),
