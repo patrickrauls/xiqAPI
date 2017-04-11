@@ -16,12 +16,12 @@ let getDistance = (lat1, lat2, lon1, lon2) => {
     return Math.ceil(d * 1.09361);
 }
 router.post('/', (req, res) => {
-    let gps1 = req.body.gps1.split(', '),
-        gps2 = req.body.gps2.split(', '),
-        lat1 = Number(gps1[0]),
-        lat2 = Number(gps2[0]),
-        lon1 = Number(gps1[1]),
-        lon2 = Number(gps2[1]);
+    let origin = req.body.origin.split(', '),
+        target = req.body.target.split(', '),
+        lat1 = Number(origin[0]),
+        lat2 = Number(target[0]),
+        lon1 = Number(origin[1]),
+        lon2 = Number(target[1]);
 
     let distance = getDistance(lat1, lat2, lon1, lon2);
     res.status(200).json({ distance })
