@@ -16,14 +16,10 @@ let getDistance = (lat1, lat2, lon1, lon2) => {
     return Math.round(d);
 }
 router.post('/', (req, res) => {
-    let origin = req.body.origin.split(', '),
-        target = req.body.target.split(', '),
-        lat1 = Number(origin[0]),
-        lat2 = Number(target[0]),
-        lon1 = Number(origin[1]),
-        lon2 = Number(target[1]);
+    let origin = req.body.origin,
+        target = req.body.target;
 
-    let distance = getDistance(lat1, lat2, lon1, lon2);
+    let distance = getDistance(origin.lat, target.lat, origin.lon, target.lon);
     res.status(200).json({ distance })
 })
 
