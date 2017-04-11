@@ -4,7 +4,7 @@ const express = require('express'),
     http = require('http'),
     body_parser = require('body-parser'),
     cors = require('cors')
-    socket = require('socket.io');
+socket = require('socket.io');
 
 const route = require('./routes/index'),
     courses = require('./routes/courses'),
@@ -35,10 +35,11 @@ const io = socket(server);
 
 io.on('connection', socket => {
     console.log('user connected')
+    socket.on('disconnect', () => {
+        console.log('user disconnected')
+    })
 })
-io.on('disconnect', socket => {
-    console.log('user disconnected')
-})
+
 server.listen(3000)
 
 module.exports = app;
