@@ -31,6 +31,11 @@ app.use('/v1/distance', distance);
 app.use('/v1/scores', scores);
 app.use('/v1/tournaments', tournaments);
 
+const io = socket(server);
+
+io.on('connection', socket => {
+    console.log('user connected')
+})
 server.listen(3000)
 
 module.exports = app;
