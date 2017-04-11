@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 let getDistance = (lat1, lat2, lon1, lon2) => {
-    let R = 6975174.98,
+    let R = 6967407.04287,
         φ1 = lat1 * Math.PI / 180,
         φ2 = lat2 * Math.PI / 180,
         Δφ = (lat2 - lat1) * Math.PI / 180,
