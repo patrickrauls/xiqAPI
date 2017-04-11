@@ -34,7 +34,10 @@ app.use('/v1/tournaments', tournaments);
 const io = socket(server);
 
 io.on('connection', socket => {
-    console.log('user connected')
+    console.log('user connected', socket)
+})
+io.on('disconnect', socket => {
+    console.log('user disconnected', socket)
 })
 server.listen(3000)
 
