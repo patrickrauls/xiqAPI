@@ -4643,6 +4643,7 @@ const courses = [
         ]
     }
 ]
+
 router.get('/', (req, res) => {
     res.status(200).json(courses);
 })
