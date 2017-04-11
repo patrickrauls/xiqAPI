@@ -13,7 +13,7 @@ let getDistance = (lat1, lat2, lon1, lon2) => {
     let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
     let d = R * c;
-    return Math.ceil(d * 1.09361);
+    return Math.round(d * 1.09361);
 }
 router.post('/', (req, res) => {
     let origin = req.body.origin.split(', '),
