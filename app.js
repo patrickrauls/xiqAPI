@@ -11,6 +11,7 @@ const route = require('./routes/index'),
     holes = require('./routes/holes'),
     players = require('./routes/players'),
     scores = require('./routes/scores'),
+    distance = require('./routes/distance'),
     tournaments = require('./routes/tournaments');
 
 const app = express(),
@@ -23,8 +24,10 @@ app.use(body_parser.urlencoded({
 app.use(cors());
 app.use(json_parser)
 app.use('/v1', route);
+app.use('/v1/holes', holes);
 app.use('/v1/courses', courses);
 app.use('/v1/players', players);
+app.use('/v1/distance', distance);
 app.use('/v1/scores', scores);
 app.use('/v1/tournaments', tournaments);
 
