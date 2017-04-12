@@ -19,7 +19,16 @@ router.get('/', (req, res) => {
     })
 })
 router.get('/:id', (req, res) => {
-    res.status(200).json(courses[req.params.id])
+    mongo.connect(uri, (err, db) => {
+        assert.equal(null, err);
+        db.collection('courses').findOne({ 'id': req.params.id })
+            .then(course => {
+                res.status(200).json(course)
+            })
+            .catch(err => {
+                res.status(500).json(err)
+            })
+    })
 })
 
 module.exports = router;
