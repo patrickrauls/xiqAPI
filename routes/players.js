@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
             invitees.push(doc)
         }, () => {
             db.close();
-
             res.status(200).json(invitees);
         })
     })
