@@ -22,8 +22,8 @@ router.get('/:id', (req, res) => {
     mongo.connect(uri, (err, db) => {
         assert.equal(null, err);
         db.collection('courses').findOne({ 'id': req.params.id })
-        console.log(course);
             .then(course => {
+                console.log(course);
                 res.status(200).json(course)
             })
             .catch(err => {
