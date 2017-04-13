@@ -1,0 +1,21 @@
+section {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 10rem;
+}
+a img {
+    height: 5rem;
+}
+#landing {
+    background-image: url('background.png');
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20rem 10rem 0 10rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}

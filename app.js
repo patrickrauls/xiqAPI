@@ -4,6 +4,7 @@ const express = require('express'),
     http = require('http'),
     body_parser = require('body-parser'),
     cors = require('cors'),
+    path = require('path'),
     socket = require('socket.io');
 
 
@@ -23,7 +24,9 @@ app.use(body_parser.urlencoded({
     extended: false
 }))
 app.use(cors());
-app.use(json_parser)
+app.use(json_parser);
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/v1', route);
 app.use('/v1/holes', holes);
 app.use('/v1/courses', courses);
